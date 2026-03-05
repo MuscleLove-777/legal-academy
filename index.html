@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>契約書・法務基礎 Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">契約書・法務基礎<span class="logo-accent">Academy</span></div>
+            <div class="header-progress">
+                <span id="header-progress-text">0% 完了</span>
+                <div class="header-progress-bar">
+                    <div class="header-progress-fill" id="header-progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- ダッシュボード -->
+        <section id="dashboard" class="dashboard">
+            <div class="welcome-section">
+                <h1>契約書・法務基礎 Academy へようこそ</h1>
+                <p>ビジネスに必須の法務知識を体系的に学べるプラットフォームです。</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-completed">0</div>
+                    <div class="stat-label">完了モジュール</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-total">12</div>
+                    <div class="stat-label">全モジュール</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="stat-score">0%</div>
+                    <div class="stat-label">平均スコア</div>
+                </div>
+            </div>
+            <div class="levels-grid" id="levels-grid"></div>
+        </section>
+
+        <!-- 学習画面 -->
+        <section id="learning" class="learning-section" style="display:none;">
+            <div class="learning-header">
+                <button class="btn-back" id="btn-back">← ダッシュボードに戻る</button>
+                <h2 id="learning-title"></h2>
+            </div>
+            <div class="learning-content" id="learning-content"></div>
+            <div class="learning-actions">
+                <button class="btn-primary" id="btn-start-quiz">クイズに挑戦する</button>
+            </div>
+        </section>
+
+        <!-- クイズ画面 -->
+        <section id="quiz" class="quiz-section" style="display:none;">
+            <div class="quiz-header">
+                <h2 id="quiz-title"></h2>
+                <div class="quiz-progress">
+                    <span id="quiz-progress-text">問題 1 / 3</span>
+                    <div class="quiz-progress-bar">
+                        <div class="quiz-progress-fill" id="quiz-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz-body">
+                <div class="quiz-question" id="quiz-question"></div>
+                <div class="quiz-choices" id="quiz-choices"></div>
+                <div class="quiz-feedback" id="quiz-feedback" style="display:none;"></div>
+                <button class="btn-primary" id="btn-next-question" style="display:none;">次の問題へ</button>
+            </div>
+        </section>
+
+        <!-- 結果画面 -->
+        <section id="result" class="result-section" style="display:none;">
+            <div class="result-card">
+                <h2>クイズ結果</h2>
+                <div class="result-score" id="result-score"></div>
+                <div class="result-detail" id="result-detail"></div>
+                <div class="result-actions">
+                    <button class="btn-secondary" id="btn-retry">もう一度挑戦</button>
+                    <button class="btn-primary" id="btn-dashboard">ダッシュボードに戻る</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 契約書・法務基礎 Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/level1-data.js"></script>
+    <script src="js/level2-data.js"></script>
+    <script src="js/level3-data.js"></script>
+    <script src="js/level4-data.js"></script>
+    <script src="js/level5-data.js"></script>
+    <script src="js/level6-data.js"></script>
+    <script src="js/level7-data.js"></script>
+    <script src="js/level8-data.js"></script>
+    <script src="js/level9-data.js"></script>
+    <script src="js/level10-data.js"></script>
+    <script src="js/level11-data.js"></script>
+    <script src="js/level12-data.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
